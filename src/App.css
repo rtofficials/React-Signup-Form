@@ -1,0 +1,192 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {}
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {}
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {}
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {} 
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: right;
+  align-self: right;
+  align-items: center;
+}
+
+.form-wrapper {
+  width: 35%;
+  height: 975px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 75px 0 0 75px;
+  box-shadow: 0px 10px 50px #555;
+  background : #ffffff;
+  background-image: url("./images/signup-image.jpg");
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: 0;
+}
+
+
+form {
+  margin-top: 40%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  margin-top: 10%;
+  text-align: right;
+  padding-left: 0px !important;
+  width: 100%;
+  color: #111;  
+  font-size: 45px;
+  font-family: "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+nav {
+  position: sticky !important;
+  top: 0;
+  width:100%;
+  height: 25%;
+  justify-self: left;
+}
+
+.nav-wrapper{
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 2%;
+  font-family: Apple Color Emoji;
+}
+
+.nav-wrapper .brand-logo{
+  font-size: 70px;
+  font-style: italic;
+  font-family: 'Sacramento', cursive;
+  padding: 30px 0 0 20px;
+}
+
+.nav-wrapper blockquote{
+  font-size: 40px;
+  margin-left: 20%;
+  padding-top: 20%;  
+  font-style: italic;
+  font-family: 'Satisfy', cursive;
+  color: black;
+  padding: 30px 0 0 20px;
+}
+
+label {
+  text-align: left;
+  font-size: 0.8em;
+  margin-bottom: 0.25em;
+  color: #263238;
+  font-weight: lighter;
+}
+
+input {
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #cfcfcf;
+}
+
+input::placeholder {
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: #999;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.95em;
+  display: relative;
+}
+
+.firstName {
+  margin-right: 1%;
+}
+
+.lastName {
+  margin-left: 1%;
+}
+
+.firstName,
+.lastName,
+.email,
+.password,
+.phoneNumber,
+.confirmPassword {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.firstName,
+.lastName {
+  width: 49%;
+}
+
+.email,
+.password,
+.phoneNumber,
+.confirmPassword {
+  width: 100%;
+}
+
+.createAccount {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.createAccount button {
+  background-color: #519e8a;
+  color: #000;
+  border: 2px solid #00acc1;
+  border-radius: 500px;
+  width: 100%;
+  margin-top: 1em;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+  text-align: center;
+}
+
+.createAccount button:hover {
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: #0097a7 !important;
+  border: 2px solid #0097a7;
+}
+
+.createAccount small {
+  padding-top: 10px !important;
+  color: #37474f;
+  font-size: 13px;
+  font-weight: lighter;
+}
